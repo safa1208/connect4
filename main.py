@@ -1,3 +1,5 @@
+import random
+
 board = ["--", "--", "--", "--", "--", "--", "--",
          "--", "--", "--", "--", "--", "--", "--",
          "--", "--", "--", "--", "--", "--", "--",
@@ -23,7 +25,7 @@ def playerInput(board):
     if inp>=1 and inp<=42 and board[inp-1] == "--":
         board[inp-1] = currentPlayer
     else:
-        print("Ooops mplayer is already in that spot!")
+        print("Ooops player is already in that spot!")
 
 #check for win (horizontle)
 def checkHorizontle(board):
