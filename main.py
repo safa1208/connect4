@@ -98,3 +98,68 @@ def checkHorizontle(board):
         winner = board[38]
         return True
 #chech winner(row)
+def checkRow(board):
+    global winner
+    if board[0] == board[7] == board[14] == board[21] and board[0] != "--":
+        winner = board[0]
+        return True
+    elif board[7] == board[14] == board[21] == board[28] and board[7] != "--":
+        winner = board[7]
+        return True
+    elif board[14] == board[21] == board[28] == board[35] and board[14] != "--":
+        winner = board[14]
+        return True
+    elif board[1] == board[8] == board[15] == board[22] and board[1] != "--":
+        winner = board[1]
+        return True
+    elif board[8] == board[15] == board[22] == board[29] and board[8] != "--":
+        winner = board[8]
+        return True
+    elif board[15] == board[22] == board[29] == board[36] and board[15] != "--":
+        winner = board[15]
+        return True
+    elif board[2] == board[9] == board[16] == board[23] and board[2] != "--":
+        winner = board[2]
+        return True
+    elif board[9] == board[16] == board[23] == board[30] and board[9] != "--":
+        winner = board[9]
+        return True
+    elif board[16] == board[23] == board[30] == board[37] and board[16] != "--":
+        winner = board[16]
+        return True
+    elif board[3] == board[10] == board[17] == board[24] and board[3] != "--":
+        winner = board[3]
+        return True
+    elif board[10] == board[17] == board[24] == board[31] and board[10] != "--":
+        winner = board[10]
+        return True
+    elif board[17] == board[24] == board[31] == board[38] and board[17] != "--":
+        winner = board[17]
+        return True
+    elif board[4] == board[11] == board[18] == board[25] and board[4] != "--":
+        winner = board[4]
+        return True
+    elif board[11] == board[18] == board[25] == board[32] and board[11] != "--":
+        winner = board[11]
+        return True
+    elif board[18] == board[25] == board[32] == board[39] and board[18] != "--":
+        winner = board[18]
+        return True
+    elif board[5] == board[12] == board[19] == board[26] and board[5] != "--":
+        winner = board[5]
+        return True
+    elif board[12] == board[19] == board[26] == board[33] and board[12] != "--":
+        winner = board[12]
+        return True
+    elif board[19] == board[26] == board[33] == board[40] and board[19] != "--":
+        winner = board[19]
+        return True
+    elif board[6] == board[13] == board[20] == board[27] and board[6] != "--":
+        winner = board[6]
+        return True
+    elif board[13] == board[20] == board[27] == board[34] and board[13] != "--":
+        winner = board[13]
+        return True
+    elif board[20] == board[27] == board[34] == board[41] and board[20] != "--":
+        winner = board[20]
+        return True
