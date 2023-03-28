@@ -254,7 +254,7 @@ def checkWin():
 def switchPlayer():
     global currentPlayer
     if currentPlayer == "x":
-        currentPlayer = "o"
+        currentPlayer = "0"
     else:
         currentPlayer = "x"
 
